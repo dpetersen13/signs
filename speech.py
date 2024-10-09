@@ -116,7 +116,7 @@ X_API_KEY = "263a08cc-4a1e-4f3c-aef9-69b1223fe668" # share this with Hackathon p
 
 cloud_api = qfrency.QfrencyCloudTTS(X_ACCOUNT_KEY, X_API_KEY)
     
-def synthesize_and_play(spoken_text, target_lang, user_gender="male", user_age="adult"):
+def synthesize_and_play(spoken_text, target_lang, user_gender="female", user_age="adult"):
     # Convert the provided target language code
     target_lang = convert_lang_code(target_lang)
     
@@ -163,6 +163,6 @@ def synthesize_and_play(spoken_text, target_lang, user_gender="male", user_age="
 
 
 # # Example usage
-# spoken_text = "Ek is lief vir jou?"
-# target_lang = "afr_Latn"  # Zulu language code
+# spoken_text = "Ek is honger?"
+# target_lang = "afr_Latn" 
 # synthesize_and_play(spoken_text, target_lang, user_gender="male", user_age="adult")
